@@ -1,0 +1,69 @@
+@import '../../../assets/styles/index.scss';
+
+.timeline {
+  &-container {
+    padding: 1rem 4rem;
+    position: relative;
+    background-color: inherit;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 2.5rem;
+      height: 2.5rem;
+      right: -1.6rem;
+      background-color: #fff;
+      border: 4px solid  $color-ruby;
+      top: 2rem;
+      border-radius: 50%;
+      z-index: 5;
+    }
+
+    &--left {
+      left: 25%;
+
+      &::before {
+        content: ' ';
+        height: 0;
+        position: absolute;
+        top: 2.2rem;
+        width: 0;
+        z-index: 5;
+        right: 3rem;
+        border: medium solid #fff;
+        border-width: 1rem 0 1rem 1rem;
+        border-color: transparent transparent transparent #fff;
+      }
+    }
+    &--right {
+      left: 50%;
+
+      &::before {
+        content: ' ';
+        height: 0;
+        position: absolute;
+        top: 2.2rem;
+        width: 0;
+        z-index: 5;
+        left: 3rem;
+        border: medium solid #fff;
+        border-width: 1rem 1rem 1rem 0;
+        border-color: transparent #fff transparent transparent;
+      }
+
+      &::after {
+        left: -1rem;
+      }
+    }
+  }
+
+  &-heading {
+    padding: 1rem;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0.6rem;
+  }
+}

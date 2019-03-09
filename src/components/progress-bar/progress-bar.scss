@@ -1,0 +1,11 @@
+@import '../../assets/styles/index.scss';
+
+.progress-bar {
+  &-container {
+    background-color: $color-skin-light;
+  }
+  background-color: $color-ruby;
+  height: 0.3rem;
+  z-index: 20;
+  position: fixed;
+}

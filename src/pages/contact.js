@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ContactForm from '../components/contact-form/contact-form'
 import Map from '../components/map'
 

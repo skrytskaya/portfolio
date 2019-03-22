@@ -1,0 +1,34 @@
+@import '../../assets/styles/index.scss';
+
+.menu {
+    &__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.95;
+        transition: height 0.3s ease;
+        z-index: 2;
+
+        &.open {
+            height: 100vh;
+        }
+
+        &.light {
+            background: $color-skin;
+            color: $color-blue;
+        }
+
+        &.dark {
+            background: $color-blue;
+            color: $color-skin;
+        }
+    }
+
+    &__list {
+        padding-top: 3rem;
+    }
+}

@@ -10,13 +10,25 @@ header {
 
   &.dark {
     background-color: $color-blue;
-    color: $color-skin;
+    color: $color-ruby;
     transition: .2s ease-in;
+    // &:hover {
+    //   color: $color-skin;
+    // }
+    .selected {
+      color: $color-skin;
+    }
   }
 
   &.light {
     background-color: $color-skin;
     transition: .2s ease-in;
+    // &:hover {
+    //   color: $color-ruby;
+    // }
+    .selected {
+      color: $color-ruby;
+    }
   }
 
   &.hidden {
@@ -35,6 +47,10 @@ header {
 }
 .nav {
 
+  @include respond(mobile) {
+    display: none;
+  }
+
   &-item {
     &,
     &:link,
@@ -44,7 +60,7 @@ header {
       display: inline-block;
       transition: .2s ease-in;
       position: relative;
-      font-size: $default-font-size;
+      // font-size: $default-font-size;
       cursor: pointer;
       text-transform: uppercase;
       color: inherit;
@@ -54,14 +70,6 @@ header {
         padding-right: 0;
       }
     }
-    &:hover {
-      color: $color-ruby;
-    }
-  
-  }
-
-  .selected {
-    color: $color-ruby;
   }
 }
 

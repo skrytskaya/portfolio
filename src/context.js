@@ -17,11 +17,21 @@ import {
   initialModalState,
   modalReducer
 } from './reducers/modalReducer'
+import {
+  MenuDispatch,
+  MenuData
+} from './contexts/menuContext'
+import {
+  initialMenuState,
+  menuReducer
+} from './reducers/menuReducer'
 
 const Context = ({ children, location }) => {
   const [themeData, themeDispatch] = useReducer(themeReducer, location && location.state && location.state.themeData ? location.state.themeData : initialThemeState)
   const [scrollProgressData, scrollProgressDispatch] = useReducer(scrollProgressReducer, initialScrollProgressState)
   const [modalData, modalDispatch] = useReducer(modalReducer, initialModalState)
+  const [menuData, menuDispatch] = useReducer(menuReducer, initialMenuState)
+
 
   return (
     <ThemeDispatch.Provider value={themeDispatch}>
@@ -30,7 +40,11 @@ const Context = ({ children, location }) => {
           <ScrollProgressData.Provider value={scrollProgressData}>
             <ModalDispatch.Provider value={modalDispatch}>
               <ModalData.Provider value={modalData}>
-                {children}
+                <MenuDispatch.Provider value={menuDispatch}>
+                  <MenuData.Provider value={menuData}>
+                    {children}
+                  </MenuData.Provider>
+                </MenuDispatch.Provider>
               </ModalData.Provider>
             </ModalDispatch.Provider>
           </ScrollProgressData.Provider>

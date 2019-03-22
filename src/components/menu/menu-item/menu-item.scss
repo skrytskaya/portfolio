@@ -1,0 +1,47 @@
+@import '../../../assets/styles/index.scss';
+
+.menu-item {
+    &__container {
+        opacity: 0;
+        animation: 1s appear forwards;
+    }
+
+    &__content {
+        padding: 1rem 0;
+        padding-right: 2rem;
+        margin: 0;
+        text-align: center;
+        cursor: pointer;
+        color: #fafafa;
+        transition: color 0.2s ease-in-out;
+        animation: 0.5s slideIn forwards;
+
+        &:hover {
+            color: gray;
+        }
+
+        &.dark {
+            color: $color-blue;
+        }
+
+        &.light {
+            color: $color-skin;
+        }
+    }
+
+    &__line {
+        width: 90%;
+        height: 1px;
+        background: $color-ruby;
+        margin: 0 auto;
+        animation: 0.5s shrink forwards;
+
+        &.dark {
+            background: $color-skin;
+        }
+
+        &.light {
+            background: $color-blue;
+        }
+    }
+}

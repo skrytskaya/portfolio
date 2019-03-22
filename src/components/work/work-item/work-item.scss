@@ -1,0 +1,51 @@
+@import '../../../assets/styles/index.scss';
+
+.work-item {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    &:not(:first-child) {
+        padding-top: 1.5rem;
+    }
+
+    &__description {
+        width: 30%;
+
+        @include respond(tab-port) {
+            width: 50%;
+        }
+
+        &-left {
+            order: 0;
+            margin-right: 5rem;
+
+            @include respond(tab-port) {
+                order: 1;
+                margin-right: 0;
+                margin-top: 1.5rem;
+            }
+        }
+        &-right {
+            order: 1;
+            margin-left: 5rem;
+
+            @include respond(tab-port) {
+                margin-left: 0;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    &__image {
+        width: 70%;
+
+        @include respond(mobile) {
+            width: 100%;
+        }
+    }
+}

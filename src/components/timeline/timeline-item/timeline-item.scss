@@ -9,6 +9,18 @@
     text-align: center;
     cursor: pointer;
 
+    @include respond(tab-port) {
+      width: 31%;
+    }
+
+    @include respond(phone) {
+      width: 41%;
+    }
+
+    @include respond(mobile) {
+      width: 55%;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -25,6 +37,18 @@
     &--left {
       left: 25%;
 
+      @include respond(tab-port) {
+        left: 19%;
+      }
+
+      @include respond(phone) {
+        left: 9%;
+      }
+
+      @include respond(mobile) {
+        left: -5%;
+      }
+
       &::before {
         content: ' ';
         height: 0;
@@ -32,7 +56,7 @@
         top: 2.2rem;
         width: 0;
         z-index: 5;
-        right: 3rem;
+        right: 3.2rem;
         border: medium solid #fff;
         border-width: 1rem 0 1rem 1rem;
         border-color: transparent transparent transparent #fff;
@@ -48,7 +72,7 @@
         top: 2.2rem;
         width: 0;
         z-index: 5;
-        left: 3rem;
+        left: 3.2rem;
         border: medium solid #fff;
         border-width: 1rem 1rem 1rem 0;
         border-color: transparent #fff transparent transparent;

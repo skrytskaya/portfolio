@@ -1,3 +1,5 @@
+@import '../../../assets/styles/index.scss';
+
 .timeline-modal {
   position:fixed;
   background: white;
@@ -6,4 +8,8 @@
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+
+  @include respond(mobile) {
+    width: 95%;
+  }
 }

@@ -7,6 +7,10 @@ export const initialThemeState = {
     backgroundColor: 'light',
     textColor: 'dark',
   },
+  menu: {
+    backgroundColor: 'light',
+    textColor: 'dark'
+  }
 }
 
 export const themeReducer = (state, action) => {

@@ -14,7 +14,7 @@ const Modal = () => {
         className="dark-overlay"
         onClick={handleModal}
       >
-        <ModalComponent modalData={modalData}/>
+        <ModalComponent modalData={modalData} />
       </div>
     )
   }

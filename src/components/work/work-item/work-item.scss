@@ -15,6 +15,7 @@
 
     &__description {
         width: 30%;
+        text-align: center;
 
         @include respond(tab-port) {
             width: 50%;

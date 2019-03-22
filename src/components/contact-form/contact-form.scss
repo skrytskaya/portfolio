@@ -2,12 +2,16 @@
 
 .contact-form {
   color: $color-blue;
-  height: 50vh;
+  // height: 50vh;
   // display: flex;
   // flex-direction: column;
   // align-items: center;
-  margin: 40px auto 0 auto;
+  margin: 4rem auto;
   width: 50vw;
+
+  @include respond(phone) {
+    width: 60vw;
+  }
 
   & [type='text'], 
   & [type='email'] {
@@ -16,25 +20,22 @@
     box-sizing: border-box;
     outline: none;
     border: 0;
-    padding: 10px 15px;
-    background: #fff;
-    font-size: 12pt;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
     margin-bottom: 3px;
-    // color: #fff;
   }
 
   & [type='submit'] {
-    margin: 5px 0 0 0;
+    margin: 0.5rem 0 0 0;
     font-size: 12pt;
-    padding: 10px 30px;
-    // color: #fff;
+    padding: 1rem 3rem;
     background: transparent;
     outline: 0;
   }
 
   textarea {
-    min-height: 150px;
-    margin-bottom: 5px;
+    min-height: 15rem;
+    margin-bottom: 0.5rem;
   }
 
 

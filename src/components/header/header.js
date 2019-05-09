@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React, { useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import './header.scss'
 import { ThemeData, ThemeDispatch } from '../../contexts/themeContext'
 
@@ -114,9 +114,7 @@ const Header = React.forwardRef(({ siteTitle }, ref) => {
           </Link>
         </div>       
       </nav>
-        <Menu 
-          // open={this.state.menuOpen}
-        >
+        <Menu>
           {menuItems}
         </Menu>
     </header>

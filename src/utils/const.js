@@ -16,6 +16,16 @@ export const ICONS = {
 export const timelineData = [
   {
     containerPosition: 'left',
+    title: 'Barcelona, Spain',
+    subtitle: '2019',
+    modal: {
+      gallery: [ `${ require('../images/gatsby-icon.png') }`, 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      title: 'Barcelona',
+      description: 'Currently I am located in sunny Barcelona.'
+    },
+  },
+  {
+    containerPosition: 'right',
     title: 'Bali, Indonesia',
     subtitle: '2019',
     modal: {
@@ -25,23 +35,13 @@ export const timelineData = [
     },
   },
   {
-    containerPosition: 'right',
+    containerPosition: 'left',
     title: 'Warsaw, Poland',
     subtitle: '2018',
     modal: {
       gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
       title: 'Warsaw',
       description: 'I moved to Warsaw for work and absolutely loved the city. Tried myself in different companies, used different technologies. Though on one cold winter day decided to move to Asia and try remote work.'
-    },
-  },
-  {
-    containerPosition: 'left',
-    title: 'Barcelona, Spain',
-    subtitle: '2018',
-    modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
-      title: 'Barcelona',
-      description: ''
     },
   },
   {

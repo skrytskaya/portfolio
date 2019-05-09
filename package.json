@@ -5,17 +5,20 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "eslint-plugin-react-hooks": "^1.0.2",
     "gatsby": "^2.1.4",
-    "gatsby-image": "^2.0.29",
+    "gatsby-background-image": "^0.5.5",
+    "gatsby-image": "^2.0.37",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.23",
     "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-sass": "^2.0.10",
-    "gatsby-plugin-sharp": "^2.0.20",
+    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.20",
-    "gatsby-transformer-sharp": "^2.1.13",
-    "google-maps-react": "^2.0.2",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "intersection-observer": "^0.6.0",
     "mapbox-gl": "^0.53.1",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
@@ -24,7 +27,8 @@
     "react-flickity-component": "^3.2.0",
     "react-helmet": "^5.2.0",
     "react-lottie": "^1.2.3",
-    "react-mapbox-gl": "^4.2.0"
+    "react-mapbox-gl": "^4.2.0",
+    "styled-components": "^4.2.0"
   },
   "keywords": [
     "gatsby"

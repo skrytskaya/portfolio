@@ -5,6 +5,10 @@
     align-items: center;
     margin: 2rem;
 
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+
     @include respond(tab-port) {
         flex-direction: column;
     }
@@ -14,7 +18,7 @@
     }
 
     &__description {
-        width: 30%;
+        width: 70%;
         text-align: center;
 
         @include respond(tab-port) {
@@ -43,7 +47,7 @@
     }
 
     &__image {
-        width: 70%;
+        width: 100%;
 
         @include respond(mobile) {
             width: 100%;

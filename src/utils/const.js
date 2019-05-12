@@ -19,7 +19,7 @@ export const timelineData = [
     title: 'Barcelona, Spain',
     subtitle: '2019',
     modal: {
-      gallery: [ `${ require('../images/gatsby-icon.png') }`, 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [ `${ require('../assets/images/barcelona1.jpg') }`, `${ require('../assets/images/barcelona2.jpg') }`, `${ require('../assets/images/barcelona3.jpg') }`, `${ require('../assets/images/barcelona4.jpg') }` ],
       title: 'Barcelona',
       description: 'Currently I am located in sunny Barcelona.'
     },
@@ -29,7 +29,7 @@ export const timelineData = [
     title: 'Bali, Indonesia',
     subtitle: '2019',
     modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [ `${ require('../assets/images/bali1.jpg') }`, `${ require('../assets/images/bali2.jpg') }`, `${ require('../assets/images/bali3.jpg') }`, `${ require('../assets/images/bali4.jpg') }`, `${ require('../assets/images/bali5.jpg') }`, `${ require('../assets/images/bali6.jpg') }` ],
       title: 'Bali',
       description: 'I bought one way ticket to the Island of Gods - Bali. So grateful for my experience, all ambitious people I’ve met on my way and gaining new skills - surfing and yoga.'
     },
@@ -39,7 +39,7 @@ export const timelineData = [
     title: 'Warsaw, Poland',
     subtitle: '2018',
     modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [`${ require('../assets/images/warsaw1.jpg') }`, `${ require('../assets/images/warsaw2.jpg'), `${ require('../assets/images/warsaw3.jpg'), `${ require('../assets/images/warsaw4.jpg') }`, `${ require('../assets/images/warsaw5.jpg') }`, `${ require('../assets/images/warsaw6.jpg') }` }` }`],
       title: 'Warsaw',
       description: 'I moved to Warsaw for work and absolutely loved the city. Tried myself in different companies, used different technologies. Though on one cold winter day decided to move to Asia and try remote work.'
     },
@@ -49,7 +49,7 @@ export const timelineData = [
     title: 'Swieqi, Malta',
     subtitle: '2016-2017',
     modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [ `${ require('../assets/images/malta1.jpg') }`, `${ require('../assets/images/malta2.jpg') }`, `${ require('../assets/images/malta3.jpg') }`, `${ require('../assets/images/malta4.jpg') }`, `${ require('../assets/images/malta5.jpg') }`, `${ require('../assets/images/malta6.jpg') }`, `${ require('../assets/images/malta7.jpg') }`, `${ require('../assets/images/malta8.jpg') }` ],
       title: 'Malta',
       description: 'After graduation I went to Malta for 3 months internship as a web developer and ended up working there for another year. Used an opportunity to get PADI diving license. Got very lucky to meet amazing people who remained my friends till now.'
     },
@@ -59,7 +59,7 @@ export const timelineData = [
     title: 'Vigo, Spain',
     subtitle: '2014',
     modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [ `${ require('../assets/images/vigo1.jpg') }`, `${ require('../assets/images/vigo2.jpg') }` ],
       title: 'Vigo',
       description: 'I did my exchange program in a beautiful Galicia. Got a chance to explore Spain and learn the basics of the language.'
     },
@@ -69,7 +69,7 @@ export const timelineData = [
     title: 'Berlin, Germany',
     subtitle: '2013',
     modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [ `${ require('../assets/images/berlin1.jpg') }` ],
       title: 'Berlin',
       description: 'After my first year at the university I spent summer vacations in this open-minded and international city by myself. Challenged my communication skills.'
     },
@@ -79,7 +79,7 @@ export const timelineData = [
     title: 'Poznan, Poland',
     subtitle: '2013-2016',
     modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [ `${ require('../assets/images/poznan1.jpg') }`, `${ require('../assets/images/poznan2.jpg') }` ],
       title: 'Poznan',
       description: 'After finishing school in Minsk I moved to Poznan. Here I made life long friends, learned how to take responsibility and got my first thoughts of dedicating my career to web development. Meanwhile learnt the art of coffee and some Krav Maga skills, also improved my polish language skills. I used every free weekend to travel and discover Europe and there I understood the beauty of traveling and discovering places from locals perspective.'
     },
@@ -89,7 +89,7 @@ export const timelineData = [
     title: 'Minsk, Belarus',
     subtitle: '1996-2013',
     modal: {
-      gallery: [ 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782', 'https://oceanservice.noaa.gov/facts/ocean-human-health.jpg' ],
+      gallery: [ `${ require('../assets/images/minsk2.jpg') }` ],
       title: 'Minsk',
       description: 'I was born and raised in Minsk. With all my love to my hometown and family I still didn’t feel like I belonged to that place. So here came my decision to move to Poland.'
     },
@@ -99,13 +99,27 @@ export const timelineData = [
 export const workData = [
   {
     descriptionPosition: 'left',
-    description: 'knnge nn kegn ng qng kgn nkj kjgjk bgwj bw fjhw hwn wem jweb jewf',
-    image: 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782'
+    description: 'Building a blog page using Gatsby.js, managing content with NetlifyCMS and hosting the project on Netlify.',
+    image: `${ require('../assets/images/gastroverdict.png') }`,
+    imageLink: 'https://gastroverdict.com/'
   },
   {
     descriptionPosition: 'right',
-    description: 'l;negn kene nn k kenjk eg gr knwr rg re ngwr gwng wn wf nwgun lkrwlkwrg w wkrgnklr wr grgjke ng wrlgkl nklw',
-    image: 'https://boygeniusreport.files.wordpress.com/2017/12/screen-shot-2017-12-28-at-10-16-04-am.png?w=782'
+    description: 'Redesigning a web page for a german client. Creating designs, implementing new features to a Shopify based project.',
+    image: `${ require('../assets/images/ecoies.png') }`,
+    imageLink: 'https://www.ecoies.com/'
+  },
+  {
+    descriptionPosition: 'left',
+    description: 'My first experience working remotely for an american client. Shopify based project. Implementing responsive designs, introducing new features to existing web site.',
+    image: `${ require('../assets/images/silverandsage.png') }`,
+    imageLink: 'https://www.silverandsagejewelry.com/'
+  },
+  {
+    descriptionPosition: 'right',
+    description: 'Writing cross-browser compliant XSLT, CSS and JavaScript for an american client. Using Symphony - CMS based on MVC pattern - to control over every aspect of the site building process.',
+    image: `${ require('../assets/images/forward.png') }`,
+    imageLink: 'https://gastroverdict.com/'
   },
 ]
 
